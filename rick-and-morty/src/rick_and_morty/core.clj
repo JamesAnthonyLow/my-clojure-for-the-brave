@@ -4,7 +4,8 @@
 
 (defn -main
   "Slurp csv file and mapify"
-  [& args]
-  (map println (mapify 
+  []
+  (dorun
+    (map println (mapify 
                    (parse 
-                     (slurp "rick-and-morty.csv")))))
+                     (slurp "rick-and-morty.csv"))))))
