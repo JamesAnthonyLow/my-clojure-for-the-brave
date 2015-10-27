@@ -3,7 +3,8 @@
   (:gen-class))
 
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Slurp csv file and mapify"
   [& args]
-  (println "Hello, World!"))
-
+  (map println (mapify 
+                   (parse 
+                     (slurp "rick-and-morty.csv")))))
