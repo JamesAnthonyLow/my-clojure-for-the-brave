@@ -32,6 +32,7 @@
 (defn mapify 
   "Convert rick-and-morty-string from CSV file into useable hash-map"
   [rows]
-  (map make-mapable rows))
+  (map make-mapable 
+       (parse rows)))
 
 
