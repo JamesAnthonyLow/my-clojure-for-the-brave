@@ -30,6 +30,7 @@
           (map vector rick-and-morty-keys unmapped-row)))
 
 (defn mapify 
+  "Convert rick-and-morty-string from CSV file into useable hash-map"
   [rows]
   (map make-mapable rows))
 
