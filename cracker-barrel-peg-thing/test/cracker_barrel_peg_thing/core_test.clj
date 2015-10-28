@@ -13,5 +13,18 @@
         (= (triangular? 3) true))))
   (testing "with non-triangular number"
     (is 
-      (= (triangular? 4) false))))
+      (= (triangular? 4) false)))
+  (testing "row-tri"
+    (is
+      (= (row-tri 1) 1))
+    (is 
+      (= (row-tri 2) 3))
+    (is 
+      (= (row-tri 3) 6))
+    (is 
+      (= (row-tri 4) 10))
+    (is
+      (= (row-tri 5) 15))
+    (is 
+      (= (row-tri 6) 21))))
 
