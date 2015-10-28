@@ -6,16 +6,19 @@
 (def filename "rick-and-morty.csv")
 
 (defn get-rick-and-morty-data
+  "Reads rick-and-morty-data from CSV"
   [filename]
   (mapify 
     (slurp filename)))
 
 (defn write-rick-and-morty-data
+  "Writes rick-and-morty-data to CSV"
   [filename hashmap] 
   (spit filename 
         (de-mapify hashmap)))
 
 (defn append
+  "Appends hash-map of new data to rick-and-morty-data"
   [rick-and-morty-data rick-and-morty-map]
   (into rick-and-morty-data (list rick-and-morty-map)))
 
