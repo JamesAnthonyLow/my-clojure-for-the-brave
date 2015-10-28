@@ -1,6 +1,6 @@
 (defproject cracker-barrel-peg-thing "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "Peg game challenge from Ch.5 of Clojure For The Brave"
+  :url "https://github.com/JamesAnthonyLow/my-clojure-for-the-brave/tree/master/cracker-barrel-peg-thing"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.7.0"]]
