@@ -1,6 +1,7 @@
 (ns rick-and-morty.core
   (load "mapify")
   (load "de_mapify")
+  (load "validate")
   (:gen-class))
 
 (def filename "rick-and-morty.csv")
